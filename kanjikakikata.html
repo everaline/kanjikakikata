@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>漢字の書き方</title>
+		<title>漢字書き方</title>
 		<style>
 			body{
 				background-color:black;
@@ -21,7 +21,7 @@
 				height:80px;
 				width:100%;
 			}
-			#kanjiyomikata{
+			#kanjikakikata{
 				font-family: strokefont;
 				font-size: 128px;
 				font-weight:32;
@@ -32,11 +32,11 @@
 		<textarea id ="nyuuryoku" oninput="arawasu(this)"></textarea>
 		<br>
 		<a id=gimon href="https://kakijun.jp/main/kanjikensaku.html">疑問がある相手の為に</a>
-		<h1 id="kanjiyomikata"/>
+		<h1 id="kanjikakikata"/>
 	</body>
 	<script>
 		function arawasu(nyuuryoku){
-			document.getElementById("kanjiyomikata").innerHTML=nyuuryoku.value;
+			document.getElementById("kanjikakikata").innerHTML=nyuuryoku.value;
 		}
 	</script>
 </html>
