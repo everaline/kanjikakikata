@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>漢字の書き方</title>
+		<style>
+			body{
+				background-color:black;
+				color:white;
+			}
+			@font-face {
+				font-family: 'strokefont';
+				src:url('KanjiStrokeOrders.ttf') format('truetype'); 
+			} 
+			#gimon{
+				font-size: 32px;
+				color:gray;
+			}
+			#nyuuryoku{
+				font-size: 64px;
+				height:80px;
+				width:100%;
+			}
+			#kanjiyomikata{
+				font-family: strokefont;
+				font-size: 128px;
+				font-weight:32;
+			}
+		</style>
+	</head>
+	<body>
+		<textarea id ="nyuuryoku" oninput="arawasu(this)"></textarea>
+		<br>
+		<a id=gimon href="https://kakijun.jp/main/kanjikensaku.html">疑問がある相手の為に</a>
+		<h1 id="kanjiyomikata"/>
+	</body>
+	<script>
+		function arawasu(nyuuryoku){
+			document.getElementById("kanjiyomikata").innerHTML=nyuuryoku.value;
+		}
+	</script>
+</html>
